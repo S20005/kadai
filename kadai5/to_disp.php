@@ -50,10 +50,10 @@ catch(Exception $e)
 
 ?>
 
-詳細<br />
+詳細:<br />
 <br />
 <br />
-料理名<br />
+料理名:<br />
 <?php print $pro_name; ?>
 <br />
 材料：<br />

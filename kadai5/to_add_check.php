@@ -43,8 +43,7 @@ if($pro_cook==''){
 
 
 
-if($pro_gazou['size']>0)
-{
+if($pro_gazou['size']>0){
 	if($pro_gazou['size']>1000000)
 	{
 		print '画像が大き過ぎます';
@@ -62,8 +61,7 @@ if($pro_name=='' || $pro_foods=='' || $pro_cook=='' || $pro_gazou['size']>100000
 	print '<input type="button" onclick="history.back()" value="戻る">';
 	print '</form>';
 }
-else
-{
+else{
 	print 'このレシピを登録します。<br />';
 	print '<form method="post" action="to_add_done.php">';
 	print '<input type="hidden" name="name" value="'.$pro_name.'">';

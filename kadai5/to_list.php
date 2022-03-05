@@ -8,8 +8,7 @@
 
 <?php
 
-try
-{
+try{
 
 	$dsn='mysql:dbname=kadai5;host=localhost;charset=utf8';
 	$user='root';
@@ -28,8 +27,7 @@ try
 	print '<form method="post" action="to_branch.php">';
 		while(true){
 			$rec=$stmt->fetch(PDO::FETCH_ASSOC);
-			if($rec==false)
-			{
+			if($rec==false){
 				break;
 			}
 			print '<input type="radio" name="procode" value="'.$rec['code']. '">';
@@ -45,8 +43,6 @@ try
 			}
 			print '<input type="submit" name="disp" value="詳細">';
 			print '<input type="submit" name="add" value="追加">';
-			#print '<input type="submit" name="edit" value="修正">';
-			#print '<input type="submit" name="delete" value="削除">';
 	print '</form>';
 
 }
